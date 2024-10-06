@@ -3,6 +3,7 @@ package org.example.java15.model;
 import java.math.BigDecimal;
 
 public class Menultem {
+    private Long id;
     private String name;
     private String image;
     private BigDecimal price;
@@ -12,12 +13,21 @@ public class Menultem {
     public Menultem() {
     }
 
-    public Menultem(String name, String image, BigDecimal price, String description, boolean isVegetarian) {
+    public Menultem(Long id, String name, String image, BigDecimal price, String description, boolean isVegetarian) {
+        this.id = id;
         this.name = name;
         this.image = image;
         this.price = price;
         this.description = description;
         this.isVegetarian = isVegetarian;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -62,8 +72,9 @@ public class Menultem {
 
     @Override
     public String toString() {
-        return "org.example.java15.model.Menultem{" +
-               "name='" + name + '\'' +
+        return "Menultem{" +
+               "id=" + id +
+               ", name='" + name + '\'' +
                ", image='" + image + '\'' +
                ", price=" + price +
                ", description='" + description + '\'' +
