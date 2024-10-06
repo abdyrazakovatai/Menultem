@@ -1,7 +1,6 @@
 package org.example.java15.dao.daoImpl;
 
 
-
 import org.example.java15.dao.MenultemDao;
 import org.example.java15.db.Database;
 import org.example.java15.model.Menultem;
