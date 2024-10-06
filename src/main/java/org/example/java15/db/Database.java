@@ -6,6 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    List<Menultem> menultems = new ArrayList<>();
+   public List<Menultem> menultems = new ArrayList<>();
 
 }
